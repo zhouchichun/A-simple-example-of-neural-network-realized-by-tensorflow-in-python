@@ -9,4 +9,6 @@ the learing rate, the path of logging, etc.. The parameters increases as the mod
 config={"learn_rate":0.001,
         "logging_name":"a_simple_frame.log",
         "ckpt":"ckpt/",
+        "batch_size":1000,
+        "max_step":30000
         }
