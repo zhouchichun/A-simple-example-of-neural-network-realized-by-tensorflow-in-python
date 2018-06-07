@@ -20,6 +20,6 @@ logging.basicConfig(level=logging.INFO,
 sess=tf.Session()
 model_1=model(sess=sess,config=config,logging=logging)
 model_1.print_var()
-for k in range(config["max_epoch"]):
+for k in range(config["max_step"]):
     x_input,y_input=GB(config["batch_size"])
     model_1.train(x_input,y_input,k)
